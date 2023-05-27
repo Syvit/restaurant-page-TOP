@@ -1,0 +1,116 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --bg: #f0f3ff;
+    --subbg: #dedeed;
+    --lnktxthover: hsl(234, 100%, 56%);
+    --postborder: #dddddd36;
+    --maintxt: #ffffff;
+    --lnkvisited: #a7dcff;    
+    --half-shadow: #1f1f1f;
+}
+body {
+    background: var(--bg);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.074) 1px, transparent 0);
+    background-size: 20px 20px;
+    background-position: -19px -19px;
+  }
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav{
+    margin: auto;
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-btn{
+    font-size: 1.2em;
+    font-weight: 300;
+    background-color: var(--subbg);
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: 0.2s;
+}
+
+.nav-btn:hover{
+    transform: translateY(-0.2rem);
+    box-shadow: 0rem 0.2rem 0rem var(--half-shadow);
+}
+
+.home > .headline{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    grid-area: hero;
+}
+
+.home > .subtext {
+    font-size: 1.5em;
+    text-align: center;
+    grid-area: subtext;
+}
+
+.home > .stock-image{
+    margin: auto;
+    width: 50vh;
+    grid-area: image;
+}
+
+.home{
+    margin: auto;
+    height: 90vh;
+    width: 80vw;
+    display: grid;
+    grid-template: 0.9fr 0.2fr 1fr  / 1fr 1fr;
+    grid-template-areas: 
+    "blank image"
+    "hero image"
+    "subtext image"
+}
