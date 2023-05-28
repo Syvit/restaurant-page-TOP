@@ -6,7 +6,8 @@ const content = document.querySelector('#content');
 
 createNav();
 content.className = 'home'
-        page.home();
+page.home();
+        
 (function pageSwitch(){
     const homeBtn = document.querySelector('#homeBtn');
     const menuBtn = document.querySelector('#menuBtn');

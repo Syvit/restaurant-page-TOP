@@ -1,5 +1,5 @@
 export { homePage };
-import Stock from '/home/collin/repositories/restaurant-page-TOP/src/stock.png';
+import Stock from '/home/collin/repositories/restaurant-page-TOP/src/stock.jpg';
 
 const container = document.querySelector('#content');
 
@@ -11,7 +11,7 @@ function homePage(){
     
         const subtext = document.createElement('p');
         subtext.classList.add('subtext');
-        subtext.innerHTML = 'This truly is an ordinary restaurant!';
+        subtext.innerHTML = 'Family owned since 2023';
         container.appendChild(subtext);
 
         const image = document.createElement('img');
